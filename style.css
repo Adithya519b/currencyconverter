@@ -1,9 +1,16 @@
 
+/* ================================
+   RESET
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ================================
+   BODY
+================================ */
 body {
     min-height: 100vh;
     display: flex;
@@ -21,6 +28,10 @@ body {
 
     padding: 20px;
 }
+
+/* ================================
+   MAIN CONTAINER
+================================ */
 .container {
     width: 100%;
     max-width: 430px;
@@ -39,6 +50,9 @@ body {
     animation: fadeIn 0.7s ease;
 }
 
+/* ================================
+   HEADING
+================================ */
 .container h2 {
     color: #0a2540;
 
@@ -50,6 +64,10 @@ body {
 
     letter-spacing: 0.5px;
 }
+
+/* ================================
+   AMOUNT INPUT
+================================ */
 #amount {
     width: 100%;
 
@@ -77,6 +95,10 @@ body {
 #amount::placeholder {
     color: #94a3b8;
 }
+
+/* ================================
+   FROM / TO LABELS
+================================ */
 .container p:not(#result) {
     text-align: left;
 
@@ -92,6 +114,10 @@ body {
 
     letter-spacing: 1px;
 }
+
+/* ================================
+   SELECT BOXES
+================================ */
 select {
     width: 100%;
 
@@ -125,6 +151,10 @@ select:focus {
 select:hover {
     border-color: #94a3b8;
 }
+
+/* ================================
+   RESULT
+================================ */
 #result {
     margin-top: 25px;
 
@@ -155,6 +185,9 @@ select:hover {
     word-break: break-word;
 }
 
+/* ================================
+   BUTTON
+================================ */
 #get {
     width: 100%;
 
@@ -199,6 +232,9 @@ select:hover {
     box-shadow: 0 5px 12px rgba(67, 97, 238, 0.25);
 }
 
+/* ================================
+   ANIMATION
+================================ */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -211,6 +247,9 @@ select:hover {
     }
 }
 
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
 @media (max-width: 480px) {
 
     body {
@@ -254,6 +293,9 @@ select:hover {
     }
 }
 
+/* ================================
+   VERY SMALL DEVICES
+================================ */
 @media (max-width: 320px) {
 
     .container {
